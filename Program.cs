@@ -7,17 +7,10 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 // Базовая настройка Builder
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-// builder.Services.AddSwaggerGen();
 
 
 WebApplication app = builder.Build();
 
-
-// if (app.Environment.IsDevelopment())
-// {
-//     app.UseSwagger();
-//     app.UseSwaggerUI();
-// }
 
 app.UseHttpsRedirection();
 
@@ -42,8 +35,8 @@ app.Urls.Add("http://localhost:8080");
 app.Run();
 
 
-// Хороший код Contexts
+// Хороший код
 // https://github.com/nklqs/dotnetwebapi/blob/master/WebAPI%20RBAC
 
-// Хороший код Program
-// https://github.com/woookle/simple-aspNet/blob/main/Program.cs
+// Хороший код
+// https://github.com/woookle/simple-aspNet/blob/main
